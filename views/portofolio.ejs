@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Portofolios</title>
+
+	</head>
+	<body>
+
+	<a href="/users/upload">Upload</a><br>
+	
+	
+	
+		<ul>
+		<% works.forEach(function(works){ %>
+		<li><%= works.title %>: &nbsp;&nbsp; <%= works.URL %></li>
+		<% }) %>
+		</ul> 
+
+	
+
+
+	</body>
+</html>
+

@@ -1,0 +1,23 @@
+{
+  "name": "miniproject",
+  "version": "1.0.0",
+  "description": "SE-course miniproject",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.6",
+    "express": "*",
+    "express-session": "^1.15.1",
+    "express-validator": "^3.1.2",
+    "mongoose": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "miniproject"
+  },
+  "author": "Ahmed Walid",
+  "license": "ISC"
+}

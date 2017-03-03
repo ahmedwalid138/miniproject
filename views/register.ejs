@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type = "text/javascript">
+      <!--
+   // The event handler function for password checking 
+    function chkName () {
+    var namefield = document.getElementByTagName("name"); 
+   
+        if (namefield.value == "") {
+    alert ("You did not enter a name \n" +
+           "Please enter one now");
+    namefield.focus();
+    return false;
+    }
+      
+     else
+          return true;
+      }
+
+      function chkUsername() {
+    var unamefield = document.getElementByTagName("username"); 
+   
+        if (unamefield.value == "") {
+    alert ("You did not enter a username \n" +
+           "Please enter one now");
+    unamefield.focus();
+    return false;
+    }
+      
+     else
+          return true;
+      }
+
+      function chkPasswords () {
+    var init = document.getElementByTagName("password"); 
+    var sec = document.getElementByTagName("confirm"); 
+        if (init.value == "") {
+    alert ("You did not enter a password \n" +
+           "Please enter one now");
+    init.focus();
+    return false;
+    }
+    
+        if (init.value != sec.value) {
+    alert("The two passwords are not the same \n" +
+      "Please re-enter both now");  
+      init.focus();
+    init.select();
+    return false;
+    } else
+          return true;
+      }
+      // -->
+    </script>
+</head>
+<body>
+ <h1>Register</h1>
+<form id = "myForm" action="" method="POST">
+  <pre>
+     
+     Name             :  <input type="text"  name="name" >
+     Username         :  <input type="text"  name="username" >  
+     Email            :  <input type="email" name="email">
+     Password         :  <input type="password" name="password">
+     
+   <input type="submit" value="Insert"> 
+   <input type="reset" value="Clear">
+  </form>
+  <script type = "text/javascript">
+      <!--
+  // Set submit button onsubmit property to the event handler 
+
+      
+      document.getElementsByTagName ("username").onfocus = chkName; 
+      document.getElementsByTagName("email").onfocus = chkUsername; 
+      document.getElementsByTagName("second").onblur = chkPasswords; 
+      document.getElementsByTagName("myForm").onsubmit = chkPasswords;
+
+
+      // -->
+    </script>
+    </body>
+
+</html>
